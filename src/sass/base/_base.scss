@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+  // background-color: black;
+
+  @include respond(tab-land) {
+    //1200
+    font-size: 62.5%; // 1rem = 9px, 9/16 = 56.25%
+    // background-color: black;
+  }
+  @include respond(tab-port) {
+    //900
+    font-size: 62.5%; //1rem = 8px 8/16 = 50%
+    // background-color: rgb(214, 18, 18);
+  }
+
+  @include respond(big-desktop) {
+    //1800
+    font-size: 62.5%; // 1rem = 12px , 12/16 = 75%
+    // background-color: rgb(102, 25, 218);
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  letter-spacing: 1.7;
+  color: $color-grey;
+  // padding: 2rem;
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}

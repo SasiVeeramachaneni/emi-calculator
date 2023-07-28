@@ -1,0 +1,414 @@
+.home-page {
+  background-color: #fff;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 63rem;
+  border-radius: 1rem;
+  padding: 2.2rem;
+  text-align: start;
+  margin: 2rem;
+  box-shadow: 0 0.5rem 0.5rem 0.5rem rgba($color-black, 0.2);
+  margin-top: 0rem;
+
+  @include respond(phone) {
+    background-color: #fff;
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    box-shadow: none;
+  }
+
+  &__head-icon-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  &__settings-card {
+    padding: 1rem;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0.1rem 0.1rem 0.2rem rgba($color-black, 0.2);
+    border-radius: 1rem;
+    right: 0.2rem;
+    width: 60%;
+    top: 3rem;
+    p {
+      cursor: pointer;
+      caret-color: transparent;
+      font-size: $text-font-size;
+      padding: 0.6rem;
+      font-weight: 500;
+    }
+  }
+  &__icon {
+    font-size: 2.6rem;
+  }
+  &__heading-primary {
+    font-size: 2rem;
+  }
+  &__heading-secondary {
+    font-size: 3rem;
+  }
+  &__heading {
+    font-size: $heading-font-size;
+
+    &--primary {
+      border-bottom: 3px solid $color-primary-c2;
+      border-radius: 1px;
+    }
+  }
+}
+
+.form {
+  &__sub-inputs-group {
+    // display: flex;
+  }
+  &__label {
+    font-size: $label-font-size;
+    font-weight: 600;
+  }
+
+  &__input {
+    width: 100%;
+    font-size: $input-font-size;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    background-color: $input-color;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+
+    &--1 {
+      width: 48.3%;
+      @include respond(phone) {
+        width: 47.5%;
+      }
+
+      font-size: $text-font-size;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+  &__button {
+    background-color: $color-primary-c;
+    font-size: $text-font-size;
+    outline: none;
+    border: 0;
+    padding: 1.2rem 3.8rem;
+    color: $color-white;
+    border-radius: 6px;
+    width: 100%;
+
+    // margin: 1rem 0rem 2rem 0rem;
+  }
+}
+
+.calculation-page {
+  background-color: #fff;
+  box-shadow: 0 0.5rem 0.5rem 0.5rem rgba($color-black, 0.2);
+
+  width: 35rem;
+  min-height: 63rem;
+  // display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: start;
+  margin: 2rem;
+  margin-top: 0rem;
+
+  @include respond(phone) {
+    width: 100%;
+    // background-color: aqua;
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  &__view-details {
+    font-size: $text-font-size;
+    height: 3.8rem;
+    text-align: right;
+    padding: 1rem;
+    span {
+      // float: right;
+      padding: 1rem;
+      cursor: pointer;
+      caret-color: transparent;
+    }
+  }
+  &__suggestions-heading {
+    padding: 2rem 2rem 0rem 1rem;
+    font-size: 1.6rem;
+  }
+  &__amount-box {
+    // background-color: $color-primary-c2;
+    background-image: linear-gradient(
+      to right bottom,
+      #6486f1,
+      // $color-primary-dark
+      #2f47db
+    );
+    color: $color-white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: startr;
+    &__amount {
+      font-size: $text-font-size;
+    }
+    &__description {
+      font-size: $text-font-size;
+      margin-bottom: 0.5rem;
+      span {
+        float: right;
+      }
+    }
+  }
+  &__amount-description {
+    margin-top: 5.4rem;
+    padding: 0rem 3rem;
+    &__cont {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.6rem;
+
+      &__text {
+        font-size: $text-font-size;
+        color: $color-grey-dark;
+      }
+      &__amount {
+        font-size: $text-font-size;
+        font-weight: 600;
+      }
+    }
+  }
+  &__pie-chart-box {
+    display: flex;
+    // background-color: aqua;
+    align-items: center;
+    margin-top: 5rem;
+    &__amount {
+      width: 100%;
+      margin-top: 1rem;
+
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0rem;
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+.sugessions-page {
+  background-color: #fff;
+  box-shadow: 0 0.5rem 0.5rem 0.5rem rgba($color-black, 0.2);
+  width: 35rem;
+  min-height: 63rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: start;
+  margin: 2rem;
+  margin-top: 0rem;
+  &__heading {
+    font-size: 2rem;
+    text-align: center;
+    color: $color-black;
+  }
+  &__suggestion {
+    font-size: $text-font-size;
+    // background-color: rgb(247, 246, 241);
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.1rem 0.3rem 0.1rem rgba($color-black, 0.4);
+    cursor: pointer;
+    span {
+      display: block;
+      text-align: right;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+.pie-chart {
+  width: 20rem;
+  height: 11rem;
+  //   background-color: aqua;
+}
+
+.comparision-page {
+  background-color: #fff;
+  box-shadow: 0 0.5rem 0.5rem 0.5rem rgba($color-black, 0.2);
+  width: 35rem;
+  min-height: 63rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: start;
+  margin: 2rem;
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  position: relative;
+  @include respond(phone) {
+    width: 100%;
+    margin: 0;
+    // background-color: aqua;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  &__heading {
+    font-size: $heading-font-size;
+    align-self: flex-start;
+
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &__compared-cards {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__paragraph {
+    font-size: $text-font-size;
+    box-shadow: 0 0.5rem 0.5rem 0.5rem rgba($color-black, 0.2);
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+  &__passage {
+    font-size: 1.4rem;
+    padding: 1rem;
+    font-weight: 500;
+  }
+  &__vs {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+  }
+}
+
+.popup-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  &__content-card {
+    position: relative;
+    background-color: #fff;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    width: 20%;
+    height: 40%;
+    @include respond(tab-port) {
+      width: 50%;
+      height: 30%;
+    }
+    @include respond(tab-land) {
+      width: 50%;
+      height: 35%;
+    }
+    @include respond(phone) {
+      width: 70%;
+      height: 35%;
+    }
+    p {
+      font-size: $text-font-size;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.back-button {
+  margin: 1rem 0.2rem;
+  display: none;
+  font-size: 2.2rem;
+  text-align: start;
+  @include respond(phone) {
+    display: inline-block;
+  }
+}
+
+.back-button-tab {
+  margin: 1rem 0.2rem;
+  display: none;
+  font-size: 2.2rem;
+  @include respond(tab-port) {
+    display: inline-block;
+  }
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+//Table
+
+.table-container {
+  width: 100%;
+  overflow: auto;
+  max-height: 18.08rem;
+  @include respond(phone) {
+    max-height: 18.51rem;
+  }
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  /* box-shadow: 10px 10px 5px 1px black; */
+  overflow: scroll;
+}
+
+thead {
+  font-size: 1rem;
+  color: #fff;
+}
+
+th {
+  border: 1px solid #000;
+  min-width: 3rem;
+  padding: 0.8rem;
+  background-color: #3a6afc;
+}
+
+td {
+  font-size: 1.2rem;
+  border: 1px solid #443c68;
+  padding-left: 1rem;
+}
+
+td:not(:first-child) {
+  border: 1px solid #443c68;
+  /* min-width: 13rem; */
+  padding: 0.8rem;
+}
